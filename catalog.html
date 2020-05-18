@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+      <header>
+        <nav class="main-nav">
+            <a class="logo" href="index.html">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+            </a>
+            <ul class="site-navigation">
+              <li class="site-navigation-item">
+                <a  href="about.html">Студия</a>
+              </li>
+              <li class="site-navigation-item">
+                <a href="сlients.html">Клиенты</a>
+              </li>
+              <li class="site-navigation-item">
+                <a>Магазин</a>
+              </li>
+              <li class="site-navigation-item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="shoping-beg">
+              <li class="shopping-bag-item">
+                <a href="shopping-bag.html">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+      </header>
+      <main>
+          <h1>Магазин готовых шаблонов</h1>
+          <section class="filter">
+              <h2 class="visually-hidden">Фильтер</h2>
+              <form action="#" method="get">
+                  <fieldset>
+                      <legend>Стоимость</legend>
+                      <label><span class="visually-hidden">от</span>
+                      <input type="text" placeholder="от 0" value="0"></label>
+                      <label><span class="visually-hidden">до</span><input type="text" placeholder="до 15000" value="15000"></label>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Сетка</legend>
+                      <label><input type="radio" name="grid" value="Адаптивная"><span>Адаптивная</span></label>
+                      <label><input type="radio" name="grid" value="Фиксированная"><span>Фиксированная</span></label>
+                      <label><input type="radio" name="grid" value="Резиновая"><span>Резиновая</span></label>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Особенности</legend>
+                      <label><input type="checkbox" name="features" checked value="Слайдер"><span>Слайдер</span></label>
+                      <label><input type="checkbox" name="features" checked value="Блок преимуществ"><span>Блок преимуществ</span></label>
+                      <label><input type="checkbox" name="features" checked value="Новости"><span>Новости</span></label>
+                      <label><input type="checkbox" name="features" checked value="Галерея"><span>Галерея</span></label>
+                      <label><input type="checkbox" name="features" checked value="Корзина"><span>Корзина</span></label>
+                  </fieldset>
+                  <button type="submit" formaction="https://echo.htmlacademy.ru/">Показать</button>
+              </form>
+          </section>
+          <section class="catalog">
+              <h2 class="visually-hidden">Каталог</h2>
+              <p>Сортировать</p>
+              <ul>
+                <li><a href="" class="sort-asc">По цене</a></li>
+                <li><a href="" class="sort-asc">По типу</a></li>
+                <li><a href="" class="sort-asc">По названию</a></li>
+            </ul>
+            <ul class="catalog-list">
+                <li class="catalog-list-item">
+                    <section class="catalog--list-item-hover">
+                        <h3 class="visually-hidden">Sedona</h3>
+                        <p>Информационный сайт для туристов</p>
+                        <button type="button">9900 рублей</button>
+                    </section>
+                    <a href=""><img src="img/Mask-Group-1.jpg" width="358" height="578" alt="Шаблон-1"></a>
+                </li>
+                <li class="catalog-list-item">
+                    <section class="catalog--list-item-hover">
+                        <h3 class="visually-hidden">Pink</h3>
+                        <p>Описание</p>
+                        <button type="button">Цена</button>
+                    </section>
+                    <a href=""><img src="img/Mask-Group-2.jpg" width="358" height="578" alt="Шаблон-2"></a>
+                </li>
+                <li class="catalog-list-item">
+                    <section class="catalog--list-item-hover">
+                        <h3 class="visually-hidden">Borodinski</h3>
+                        <p>Описание</p>
+                        <button type="button">Цена</button>
+                    </section>
+                    <a href=""><img src="img/Mask-Group-3.jpg" width="358" height="578" alt="Шаблон-3"></a>
+                </li>
+                <li class="catalog-list-item">
+                    <section class="catalog--list-item-hover">
+                        <h3 class="visually-hidden">Mishka</h3>
+                        <p>Описание</p>
+                        <button type="button">Цена</button>
+                    </section>
+                    <a href=""><img src="img/Mask-Group-4.jpg" width="358" height="578" alt="Шаблон-4"></a>
+                </li>
+                <li class="catalog-list-item">
+                    <section class="catalog--list-item-hover">
+                        <h3 class="visually-hidden">A+</h3>
+                        <p>Описание</p>
+                        <button type="button">Цена</button>
+                    </section>
+                    <a href=""><img src="img/Mask-Group-5.jpg" width="358" height="578" alt="Шаблон-5"></a>
+                </li>
+                <li class="catalog-list-item">
+                    <section class="catalog--list-item-hover">
+                        <h3 class="visually-hidden">Кваст</h3>
+                        <p>Описание</p>
+                        <button type="button">Цена</button>
+                    </section>
+                    <a href=""><img src="img/Mask-Group-6.jpg" width="358" height="578" alt="Шаблон-6"></a>
+                </li>
+            </ul>
+            <ul>
+                <li><a>1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">Следующая</a></li>
+            </ul>
+            </section>
+      </main>
+      <footer class="main-footer">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p>Nёrds design studio</p>
+          <dl class="contact-list">
+           <dt class="visually-hidden">Адрес</dt>
+           <dd>191186, Санкт-Петербург,<br>
+               ул. Б. Конюшенная, д. 19/8
+           </dd>
+           <dt class="visually-hidden">Телефон</dt>
+           <dd><a href="tel:+78122757575">+7 (812) 275–75–75</a></dd>
+          </dl>
+          <a href="">Напишите нам</a>
+          <img src="img/map-1.jpg" width="1440" height="416" alt="Карта">
+          <h2 class="visually-hidden">Соцсети</h2>
+          <ul class="social-list">
+            <li class="social-list-item"><a href="">Вконтакте</a></li>
+            <li class="social-list-item"><a href="">Facebook</a></li>
+            <li class="social-list-item"><a href="">Instagram</a></li>
+         </ul>
+       </section>
+       <dl class="sale">
+         <dt>Давайте дружить, это <strong>выгодно!</strong></dt>
+         <dd>Скидка 10% для друзей из социальных сетей</dd>
+       </dl>
+       <section class="feedback">
+           <h2>Напишите нам</h2>
+           <form action="#" method="post">
+            <fieldset>
+                <legend>Стоимость</legend>
+                <label><span class="visually-hidden">Имя</span>
+                <input type="text" placeholder="Имя" value="Иван Иванович"></label>
+                <label><span class="visually-hidden">Телефон</span>
+                <input type="text" name="Телефон" value="+7 (999) 786–09–09"></label>
+                <label><span class="visually-hidden">Эл. почта</span>
+                <input type="text" name="Эл. Почта" value="name@mail.ru"></label>
+                <label><span class="visually-hidden">Сообщение</span>
+                <input type="text" name="Сообщение" value="Текст сообщения"></label>
+            </fieldset>
+            <button type="button">Отправить</button>
+           </form>
+       </section>
+      </footer>
+  </body>
+</html>

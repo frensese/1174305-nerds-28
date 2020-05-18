@@ -2,11 +2,162 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a href="about.html">Студия</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="сlients.html">Клиенты</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <ul class="shoping-beg">
+          <li class="shopping-bag-item">
+            <a href="shopping-bag.html">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">
+        Главная старница дизайн-студии Нёрдс
+      </h1>
+      <section class="slider">
+        <p>Долго, дорого,<br>
+          скрупулезно.</p>
+        <p>Математически выверенный дизайн <br>
+          для вашего сайта или мобильного приложения.</p>
+        <img src="img/nerds-index-slide-1.png" width="760" height="431" alt="Дизайн мобильного приложения">
+        <a href="">Узнать больше</a>
+        <div class="slider-control">
+          <button class="slider-button active-button" type="button">Первый слайд</button>
+          <button class="slider-button" type="button">Второй слайд</button>
+          <button class="slider-button" type="button">Третий слайд</button>
+        </div>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="service-list">
+          <li class="service-list-item">
+            <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+            <button type="button">Заказать</button>
+          </li>
+          <li class="service-list-item">
+            <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button type="button">Заказать</button>
+          </li>
+          <li class="service-list-item">
+            <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <button type="button">Заказать</button>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2 class="visually-hidden">О нас</h2>
+        <p>Мы — маленькая, но гордая <br>
+           дизайн-студия из Краснодара
+        </p>
+        <p>
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+          превыше креатива. Работаем, не покладая рук, как роботы.
+        </p>
+        <p>Выполняем заказы на разработку:</p>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для IOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+        <img src="img/nerds-illustration-1.png" width="360" height="208" alt="Логотип Нёрдс">
+        <p>С 2004 года любим тосность во всем:</p>
+        <dl class="statistic-quolity">
+          <dt>Уровень самоотдачи</dt>
+          <dd>146<span class="percent">%</span></dd>
+          <dt>Соблюдение сроков</dt>
+          <dd>100<span class="percent">%</span></dd>
+          <dt>Минимальная предоплата</dt>
+          <dd>50<span class="percent">%</span></dd>
+        </dl>
+      </section>
+      <section class="Partners">
+      <h2>Партнёры</h2>
+        <ul>
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1-unactive.svg" width="199" height="68" alt="HTML academy"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/logo-2-unactive.png" width="209" height="90" alt="Borodinski"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/logo-3-unactive.png" width="185" height="52" alt="Pink"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/logo-4-unactive.png" width="173" height="84" alt="Mishka"></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>Nёrds design studio</p>
+        <dl class="contact-list">
+         <dt class="visually-hidden">Адрес</dt>
+         <dd>191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8
+         </dd>
+         <dt class="visually-hidden">Телефон</dt>
+         <dd><a href="tel:+78122757575">+7 (812) 275–75–75</a></dd>
+        </dl>
+        <a href="">Напишите нам</a>
+        <img src="img/map-1.jpg" width="1440" height="416" alt="Карта">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul class="social-list">
+          <li class="social-list-item"><a href="">Вконтакте</a></li>
+          <li class="social-list-item"><a href="">Facebook</a></li>
+          <li class="social-list-item"><a href="">Instagram</a></li>
+       </ul>
+     </section>
+     <dl class="sale">
+       <dt>Давайте дружить, это <strong>выгодно!</strong></dt>
+       <dd>Скидка 10% для друзей из социальных сетей</dd>
+     </dl>
+     <section class="feedback">
+         <h2>Напишите нам</h2>
+         <form action="#" method="post">
+          <fieldset>
+              <legend>Стоимость</legend>
+              <label><span class="visually-hidden">Имя</span>
+              <input type="text" placeholder="Имя" value="Иван Иванович"></label>
+              <label><span class="visually-hidden">Телефон</span>
+              <input type="text" name="Телефон" value="+7 (999) 786–09–09"></label>
+              <label><span class="visually-hidden">Эл. почта</span>
+              <input type="text" name="Эл. Почта" value="name@mail.ru"></label>
+              <label><span class="visually-hidden">Сообщение</span>
+              <input type="text" name="Сообщение" value="Текст сообщения"></label>
+          </fieldset>
+          <button type="button">Отправить</button>
+         </form>
+     </section>
+    </footer>
   </body>
 </html>
