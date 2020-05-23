@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Каталог</title>
   </head>
   <body>
       <header>
@@ -36,26 +37,29 @@
           <h1>Магазин готовых шаблонов</h1>
           <section class="filter">
               <h2 class="visually-hidden">Фильтер</h2>
-              <form action="#" method="get">
+              <form action="https://echo.htmlacademy.ru/courses" method="get">
                   <fieldset>
                       <legend>Стоимость</legend>
-                      <label><span class="visually-hidden">от</span>
-                      <input type="text" placeholder="от 0" value="0"></label>
-                      <label><span class="visually-hidden">до</span><input type="text" placeholder="до 15000" value="15000"></label>
+                      <label class="visually-hidden" for="range">Стоимость</label>
+                      <input type="range" name="range" id="range" min="0" max="15000" step="100">
+                      <label for="min-range">От</label>
+                      <input type="text" name="min-range" id="min-range" placeholder="0">
+                      <label for="max-range">до</label>
+                      <input type="text" name="max-range" Id="max-range" placeholder="15000">
                   </fieldset>
                   <fieldset>
                       <legend>Сетка</legend>
-                      <label><input type="radio" name="grid" value="Адаптивная"><span>Адаптивная</span></label>
-                      <label><input type="radio" name="grid" value="Фиксированная"><span>Фиксированная</span></label>
-                      <label><input type="radio" name="grid" value="Резиновая"><span>Резиновая</span></label>
+                      <label><input type="radio" name="grid" value="Адаптивная">Адаптивная</label>
+                      <label><input type="radio" name="grid" value="Фиксированная">Фиксированная</label>
+                      <label><input type="radio" name="grid" value="Резиновая">Резиновая</label>
                   </fieldset>
                   <fieldset>
                       <legend>Особенности</legend>
-                      <label><input type="checkbox" name="features" checked value="Слайдер"><span>Слайдер</span></label>
-                      <label><input type="checkbox" name="features" checked value="Блок преимуществ"><span>Блок преимуществ</span></label>
-                      <label><input type="checkbox" name="features" checked value="Новости"><span>Новости</span></label>
-                      <label><input type="checkbox" name="features" checked value="Галерея"><span>Галерея</span></label>
-                      <label><input type="checkbox" name="features" checked value="Корзина"><span>Корзина</span></label>
+                      <label><input type="checkbox" name="features" checked value="Слайдер">Слайдер</label>
+                      <label><input type="checkbox" name="features" checked value="Блок преимуществ">Блок преимуществ</label>
+                      <label><input type="checkbox" name="features" checked value="Новости">Новости</label>
+                      <label><input type="checkbox" name="features" checked value="Галерея">Галерея</label>
+                      <label><input type="checkbox" name="features" checked value="Корзина">Корзина</label>
                   </fieldset>
                   <button type="submit" formaction="https://echo.htmlacademy.ru/">Показать</button>
               </form>
@@ -70,52 +74,64 @@
             </ul>
             <ul class="catalog-list">
                 <li class="catalog-list-item">
-                    <section class="catalog--list-item-hover">
-                        <h3 class="visually-hidden">Sedona</h3>
+                    <article class="catalog--list-item-hover">
+                      <div>
+                        <h3><a href="">Sedona</a></h3>
                         <p>Информационный сайт для туристов</p>
-                        <button type="button">9900 рублей</button>
-                    </section>
-                    <a href=""><img src="img/Mask-Group-1.jpg" width="358" height="578" alt="Шаблон-1"></a>
+                        <a href="">9 900 ₽</a>
+                      </div>
+                      <a href=""><img src="img/Mask-Group-1.jpg" width="358" height="578" alt="Шаблон-1"></a>
+                    </article>
                 </li>
                 <li class="catalog-list-item">
-                    <section class="catalog--list-item-hover">
-                        <h3 class="visually-hidden">Pink</h3>
-                        <p>Описание</p>
-                        <button type="button">Цена</button>
-                    </section>
-                    <a href=""><img src="img/Mask-Group-2.jpg" width="358" height="578" alt="Шаблон-2"></a>
+                    <article class="catalog--list-item-hover">
+                      <div>
+                        <h3><a href="">Pink App</a></h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a href="">9 900 ₽</a>
+                      </div>
+                      <a href=""><img src="img/Mask-Group-2.jpg" width="358" height="578" alt="Шаблон-2"></a>
+                    </article>  
                 </li>
                 <li class="catalog-list-item">
-                    <section class="catalog--list-item-hover">
-                        <h3 class="visually-hidden">Borodinski</h3>
-                        <p>Описание</p>
-                        <button type="button">Цена</button>
-                    </section>
-                    <a href=""><img src="img/Mask-Group-3.jpg" width="358" height="578" alt="Шаблон-3"></a>
+                    <article class="catalog--list-item-hover">
+                      <div>
+                        <h3><a href="">Barbershop</a></h3>
+                        <p>Сайт салона красоты. Для мужчин, да.</p>
+                        <a href="">9 900 ₽</a>
+                      </div>
+                      <a href=""><img src="img/Mask-Group-3.jpg" width="358" height="578" alt="Шаблон-3"></a>
+                    </article>
                 </li>
                 <li class="catalog-list-item">
-                    <section class="catalog--list-item-hover">
-                        <h3 class="visually-hidden">Mishka</h3>
-                        <p>Описание</p>
-                        <button type="button">Цена</button>
-                    </section>
-                    <a href=""><img src="img/Mask-Group-4.jpg" width="358" height="578" alt="Шаблон-4"></a>
+                    <article class="catalog--list-item-hover">
+                      <div>
+                        <h3><a href="">Mishka</a></h3>
+                        <p>Интернет-магазин  вязаных игрушек</p>
+                        <a href="">9 900 ₽</a>
+                      </div>
+                      <a href=""><img src="img/Mask-Group-4.jpg" width="358" height="578" alt="Шаблон-4"></a>
+                    </article>
                 </li>
                 <li class="catalog-list-item">
-                    <section class="catalog--list-item-hover">
-                        <h3 class="visually-hidden">A+</h3>
-                        <p>Описание</p>
-                        <button type="button">Цена</button>
-                    </section>
-                    <a href=""><img src="img/Mask-Group-5.jpg" width="358" height="578" alt="Шаблон-5"></a>
+                    <article class="catalog--list-item-hover">
+                      <div>
+                        <h3><a href="">A Plus</a></h3>
+                        <p>Лендинг курсов повышения квалификации</p>
+                        <a href="">9 900 ₽</a>
+                      </div>
+                        <a href=""><img src="img/Mask-Group-5.jpg" width="358" height="578" alt="Шаблон-5"></a>
+                    </article>  
                 </li>
                 <li class="catalog-list-item">
-                    <section class="catalog--list-item-hover">
-                        <h3 class="visually-hidden">Кваст</h3>
-                        <p>Описание</p>
-                        <button type="button">Цена</button>
-                    </section>
-                    <a href=""><img src="img/Mask-Group-6.jpg" width="358" height="578" alt="Шаблон-6"></a>
+                    <article class="catalog--list-item-hover">
+                      <div>
+                        <h3><a href="">Кваст</a></h3>
+                        <p>Промо-сайт производителя крафтового кваса</p>
+                        <a href="">9 900 ₽</a>
+                      </div>
+                      <a href=""><img src="img/Mask-Group-6.jpg" width="358" height="578" alt="Шаблон-6"></a>
+                    </article>
                 </li>
             </ul>
             <ul>
