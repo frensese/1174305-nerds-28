@@ -834,23 +834,25 @@ input[type="text"]:invalid::-webkit-input-placeholder {
     padding: 0;
 }
 
+.catalog-list li{
+    display: flex;
+} 
+
 .catalog-item {
-    min-width: 358px;
+    display: flex;
     padding-top: 40px;
     background-color: var(--bg-gray);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
     margin-right: 40px;
-    
 }
 
 .catalog-item:hover {
     background-color: var(--checkbox-color);
-     
+    box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
  }
 
  .catalog-item:hover .item-info {
@@ -888,3 +890,8 @@ input[type="text"]:invalid::-webkit-input-placeholder {
    position: absolute;
 }
 
+img.item-img {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
