@@ -118,9 +118,30 @@ h3 {
     opacity: 30%;
 }
 
+.navigation-item {
+    position: relative;
+}
+
+.user-nav .navigation-item:last-child::before {
+    content: "";
+    background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 7px;
+    left: -38px;
+    padding-right: 26px;
+}
+
+
 .active {
     padding-bottom: 14px;
     border-bottom: 2px solid var(--red);
+}
+
+.sliders {
+    position: relative;
 }
 
 .slider {
@@ -128,6 +149,7 @@ h3 {
     padding-top: 20px;
     padding-bottom: 20px;
     min-height: 431px;
+    display: none;
 }
 
 .slider-expensive {
@@ -150,6 +172,35 @@ h3 {
     background-size: 760px 431px;
     background-position: right top;
 }
+
+.slider-current {
+    display: block;
+}
+
+.slider-controls {
+    position: absolute;
+    top:90%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+}
+
+.slider-buttom {
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: none;
+}
+
+.current {
+    background-image: url(../img/slider-mark.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
 
 h1,
 .slider p:first-child {
@@ -178,7 +229,7 @@ a.button {
     background-color: var(--red);
     border-radius: 3px;
     font-weight: 500;
-    min-width: 160px;
+    width: 160px;
     min-height: 50px;
 }
 
