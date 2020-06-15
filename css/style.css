@@ -48,6 +48,13 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 42px;
+    padding-bottom: 108px;
+}
+
 h3 {
     font-size: 24px;
     line-height: 30px;
@@ -69,7 +76,9 @@ h3 {
     overflow: hidden;
 }
 
-.wrap-container{
+.wrap-container,
+.wrap-container,
+.catalog-container {
     width: 1160px;
     margin: 0 auto;
 }
@@ -96,11 +105,12 @@ h3 {
     grid-area: main;
 }
   
-.social {
+.footer-wrap {
     grid-area: footer;
 }
 
-.main-header {
+.main-header,
+.catalog-header {
     text-transform: uppercase;
     line-height: 30px;
     background-color: var(--bg-gray);
@@ -125,14 +135,23 @@ h3 {
     font-weight: 500;
 }
 
-.site-navigation,
+.home-navigation,
 .user-nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-bottom: 18px;
+    padding-bottom: 19px;
     display: flex;
     justify-content: space-between;
+}
+
+.site-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
 }
 
 .user-nav {
@@ -249,8 +268,6 @@ h3 {
     background-position: 50%;
 }
 
-
-
 h1,
 .slider p:first-child {
     font-size: 55px;
@@ -296,6 +313,8 @@ a.item-prise {
     min-width: 200px;
     padding-left: 72px;
     padding-right: 72px;
+    align-self: flex-end;
+    margin-bottom: 43px;
 }
 
 .slider a.button {
@@ -550,7 +569,6 @@ tr:first-child .quolity-item {
     position: relative;
 }
 
-
 .contacts-info {
     position: absolute;
     background-color: #ffffff;
@@ -597,6 +615,13 @@ a.contacts-button {
     color: var(--basic-color);
 }
 
+.item-title {
+    min-width: 100px;
+    text-align: center;
+    margin: 0;
+    margin-top: 24px;
+}
+
 .item-title a:hover,
 .item-title a:focus {
     color: var(--red);
@@ -613,6 +638,12 @@ a.contacts-button {
 .item-text {
     line-height: 18px;
     color: var(--text-hover-catalog-item);
+}
+
+.item-text {
+    margin-top: 5px;
+    padding: 0 39px;
+    text-align: center;
 }
 
 .social-list {
@@ -653,7 +684,6 @@ a.contacts-button {
     background-position: center;
     padding: 39px;
 }
-
 
 .social-inst a {
     background-image: url("../img/insta-icon.svg");   
@@ -700,15 +730,59 @@ a.contacts-button {
 
 /* Style for catalog */
 
+.catalog-page {
+    display: grid;
+    grid-template-areas:
+      "catalog-header"
+      "catalog-main"
+      "catalog-footer";
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      150px
+      1fr
+      216px;
+    min-height: 100vh;
+}
+  
+.catalog-header {
+    grid-area: catalog-header;
+}
+  
+.catalog-content {
+    grid-area: catalog-main;
+}
+  
+.footer-catalog {
+    grid-area: catalog-footer;
+}
+
+.catalog-container {
+    display: flex;
+}
+
+.catalog {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    margin-top: 55px;
+}
+
 .filter-fieldset {
     border: none;
     margin: 0;
     padding: 0;
 }
 
+.filter-checkbox {
+    margin-top: 32px;
+}
+
 .range-filter {
     width: 260px;
-    margin-top: 49px;
+    margin-top: 47px;
 }
 
 .filter-label {
@@ -767,6 +841,17 @@ a.contacts-button {
     justify-content: space-between;
 }
 
+.filter-radio {
+    margin-top: 54px;
+}
+
+.filter-list {
+    padding: 0;
+    padding-left: 36px;
+    margin: 0;
+    margin-top: 8px;
+}
+
 input[type="number"] {
     width: 80px;
     height: 38px;
@@ -780,7 +865,8 @@ input[type="radio"] + label::before {
     content: "";
     background-image: url("../img/radio-off.svg");   
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px;
     opacity: 40%;
@@ -790,7 +876,8 @@ input[type="radio"]:checked + label::before {
     content: "";
     background-image: url("../img/radio-on.svg"); 
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px;  
     opacity: 40%;
@@ -801,7 +888,8 @@ input[type="radio"]:focus + label::before {
     content: "";
     background-image: url("../img/radio-off.svg"); 
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px; 
     opacity: 100%; 
@@ -812,7 +900,8 @@ input[type="radio"]:checked:focus  + label::before {
     content: "";
     background-image: url("../img/radio-on.svg"); 
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px; 
     opacity: 100%; 
@@ -822,7 +911,8 @@ input[type="radio"]:disabled + label::before {
     content: "";
     background-image: url("../img/radio-off.svg");   
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px;
     opacity: 10%;
@@ -832,7 +922,8 @@ input[type="radio"]:checked:disabled  + label::before {
     content: "";
     background-image: url("../img/radio-on.svg"); 
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px; 
     opacity: 10%; 
@@ -842,7 +933,8 @@ input[type="checkbox"] + label::before {
     content: "";
     background-image: url("../img/checkbox-off.svg");   
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px;
     opacity: 40%;
@@ -852,7 +944,8 @@ input[type="checkbox"]:checked + label::before {
     content: "";
     background-image: url("../img/checkbox-on.svg"); 
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px;  
     opacity: 40%;
@@ -863,7 +956,8 @@ input[type="checkbox"]:focus + label::before {
     content: "";
     background-image: url("../img/checkbox-off.svg");   
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px;
     opacity: 100%;
@@ -874,7 +968,8 @@ input[type="checkbox"]:checked:focus + label::before {
     content: "";
     background-image: url("../img/checkbox-on.svg"); 
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px; 
     opacity: 100%; 
@@ -884,7 +979,8 @@ input[type="checkbox"]:disabled + label::before {
     content: "";
     background-image: url("../img/checkbox-off.svg");   
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px;
     opacity: 10%;
@@ -894,7 +990,8 @@ input[type="checkbox"]:checked:disabled + label::before {
     content: "";
     background-image: url("../img/checkbox-on.svg"); 
     position: absolute;
-    margin-left: -30px;
+    margin-left: -36px;
+    margin-top: 6px;
     width: 25px;
     height: 25px; 
     opacity: 10%; 
@@ -908,7 +1005,7 @@ input[type="checkbox"]:disabled + label {
 }
 
 .filter-item label {
-    line-height: 19px;
+    line-height: 40px;
     color: var(--text-color);
 }
 
@@ -922,15 +1019,16 @@ input[type="checkbox"]:disabled + label {
     background-color: var(--bg-gray);
     text-transform: uppercase;
     font-weight: 500;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 86px;
+    padding-right: 86px;
     border-radius: 3px;
+    height: 50px;
     color: var(--basic-color);
+    margin-top: 38px;
 }
 
 input[type="number"]::-webkit-input-placeholder {
+    text-align: center;
     padding-left: 10px;
 }
 
@@ -955,6 +1053,32 @@ input[type="number"]:focus {
     color: #959595;
 }
 
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    min-width: 744px;
+    margin-top: 37px;
+    margin-bottom: 13px;
+}
+
+.sorting-title {
+    margin-right: 117px;
+    height: 30px;
+    align-items: flex-end;
+}
+
+.sorting-list {
+    display: flex;
+    justify-content: space-between;
+    width: 272px;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 0;
+    margin-left: 117px;
+    height: 30px;
+    align-items: flex-end;
+}
+
 .sorting-item a {
     font-size: 14px;
     line-height: 18px;
@@ -975,6 +1099,13 @@ input[type="number"]:focus {
 .sorting-arrows {
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 25px;    
+    margin-left: 12px;
+    height: 30px;
+    padding-bottom: 6px;
 }
 
 input[type="radio"].sorting-arrow + label::before,
@@ -1001,12 +1132,11 @@ a.arrow-2::before {
     opacity: 100%;
 }
 
-.item-info {
-    background-color: var(--bg-gray);
-}
-
 .pagination {
     display: flex;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: -18px;
 }
 
 .pagination-item,
@@ -1109,6 +1239,7 @@ input[type="text"]:invalid::-webkit-input-placeholder {
     flex-wrap: wrap;
     flex-direction: row;
     padding: 0;
+    align-items: flex-start;
 }
 
 .catalog-list li{
@@ -1117,26 +1248,45 @@ input[type="text"]:invalid::-webkit-input-placeholder {
 
 .catalog-item {
     display: flex;
-    padding-top: 40px;
-    background-color: var(--bg-gray);
+    border-top: 40px solid var(--bg-gray);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
     margin-right: 40px;
+    margin-bottom: 30px;
 }
 
 .catalog-item:hover {
-    background-color: var(--checkbox-color);
+    border-top: 40px solid var(--checkbox-color);
     box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
- }
+}
 
- .catalog-item:hover .item-info {
+.item-info {
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--bg-gray);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.catalog-item:hover .item-info {
     visibility: visible;
     position: absolute;
-     
- }
+    justify-content: center;
+    min-height: 230px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: var(--bg-gray);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 
 .circle,
 .circle::before,
@@ -1150,7 +1300,7 @@ input[type="text"]:invalid::-webkit-input-placeholder {
 }
 
 .circle {
-    top: 13px;
+    top: -26px;
     left: 16px;
 }
 
@@ -1162,13 +1312,14 @@ input[type="text"]:invalid::-webkit-input-placeholder {
     left: 44px;
 }
 
-.item-info {
-   visibility: hidden;
-   position: absolute;
-}
-
 img.item-img {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #c4c4c4;
+    
+}
+
+.catalog-item:hover .item-img {
+    border: none;
+   
 }
