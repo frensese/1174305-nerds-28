@@ -481,7 +481,7 @@ tr:first-child .quolity-item {
 
 .about-item::before {
     content: "";
-    background-image: url(../img/list-marker.svg);
+    background-color: var(--red);
     position: absolute;
     margin-left: -38px;
     top: 10px;
