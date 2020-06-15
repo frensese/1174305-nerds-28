@@ -6,185 +6,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Нёрдс</title>
 
+    <link href="https://assets.htmlacademy.ru/content/skills/6/case-01/outline.cs" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="main-page">
     <header class="main-header">
-      <nav class="main-nav">
-        <a>
-          <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
+      <div class="wrap-container">
+        <nav class="main-nav">
+          <a class="logo" href="">
+            <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
+          </a>
 
-        <ul class="site-navigation">
-          <li class="navigation-item">
-            <a href="">Студия</a>
-          </li>
-          <li class="navigation-item">
-            <a href="">Клиенты</a>
-          </li>
-          <li class="navigation-item">
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li class="navigation-item">
-            <a href="">Контакты</a>
-          </li>
-        </ul>
-        <ul class="user-nav">
-          <li class="navigation-item">
-            <a href="">
-              <span class="basket">Корзина</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="site-navigation">
+            <li class="navigation-item">
+              <a href="">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="">Клиенты</a>
+            </li>
+            <li class="navigation-item">
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li class="navigation-item">
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="user-nav">
+            <li class="navigation-item">
+              <a href="">
+                <span class="basket">Корзина</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main-content">
-      <h1 class="visually-hidden">
-        Дизайн-студия Нёрдс
-      </h1>
+      <div class="main-wrap">
+        <div class="wrap-container">
+           <h1 class="visually-hidden">
+              Дизайн-студия Нёрдс
+           </h1>
 
-      <section class="sliders">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <div class="slider slider-expensive slider-current">
-          <p>Долго, дорого,<br>
-            скрупулезно.</p>
-          <p>Математически выверенный дизайн <br>
-          для вашего сайта или мобильного приложения.</p>
-          <a class="button" href="">Узнать больше</a>
+           <section class="sliders">
+              <h2 class="visually-hidden">Наши преимущества</h2>
+              <div class="slider slider-expensive slider-current">
+                <p>Долго, дорого,<br>
+                  скрупулезно.</p>
+                <p>Математически выверенный дизайн <br>
+                 для вашего сайта или мобильного приложения.</p>
+                <a class="button" href="">Узнать больше</a>
+              </div>
+
+              <div class="slider slider-math">
+                <p>Любим математику <br>  как никто другой</p>
+                <p>Никакого креатива, только математические формулы <br> для расчета идеальных пропорций</p>
+                <a class="button" href="">Узнать больше</a>
+              </div>
+
+              <div class="slider slider-hight">
+                <p>Только ночь,<br>
+                  только хардкор</p>
+                <p>Работать днем, как все? Мы против этого. <br>
+                  Ближе к полуночи работа только начинается.</p>
+                <a class="button" href="">Узнать больше</a>
+              </div>
+
+              <div class="slider-controls">
+                <button class="slider-buttom current" type="button" aria-label="Первый слайд"></button>
+                <button class="slider-buttom" type="button" aria-label="Первый слайд"></button>
+                <button class="slider-buttom" type="button" aria-label="Первый слайд"></button>
+              </div>
+            </section>
+          </div>
         </div>
 
-        <div class="slider slider-math">
-          <p>Любим математику  как никто другой</p>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <a class="button" href="">Узнать больше</a>
+        <div class="wrap-container">  
+          <section class="services">
+            <h2 class="visually-hidden">Наши услуги</h2>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <h3 class="service-title">Веб-сайты</h3>
+                <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+                <a class="button" href="">Заказать</a>
+              </li>
+
+              <li class="service-item">
+                <h3 class="service-title">Приложения</h3>
+                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                <a class="button" href="">Заказать</a>
+              </li>
+
+              <li class="service-item">
+                <h3 class="service-title">Презентации</h3>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="button" href="">Заказать</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="about">
+            <h2 class="visually-hidden">О нас</h2>
+
+            <div class="about-description">
+              <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара</p>
+
+              <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+                превыше креатива. Работаем, не покладая рук, как роботы.
+              </p>
+
+              <p class="list-title">Выполняем заказы на разработку:</p>
+              <ul class="about-list">
+                <li class="about-item">Веб-сайтов любой сложности</li>
+                <li class="about-item">Мобильных приложений для IOS и Android</li>
+                <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
+
+            <div class="about-table">
+              <p class="title-quolity">С 2004 года любим точность во всем:</p>
+
+              <table class="table-quolity">
+                <tr>
+                  <td class="quolity-item">146<sup><span class="percent">%</span></sup></td>
+                  <td class="quolity-item">100<sup><span class="percent">%</span></sup></td>
+                  <td class="quolity-item">50<sup><span class="percent">%</span></sup></td>
+                </tr>
+
+                <tr class="table-description">
+                  <td class="quolity-item">Уровень самоотдачи</td>
+                  <td class="quolity-item">Соблюдение сроков</td>
+                  <td class="quolity-item">Минимальная предоплата</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+
+          <section class="partners">
+            <h2 class="visually-hidden">Наши партнёры</h2>
+            <ul class="partners-list">
+              <li class="partners-logo logo-htmlacademy">
+                <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/Logo-htmlacademy.svg" width="199" height="68" alt="Логотип HTML academy"></a>
+              </li>
+
+              <li class="partners-logo logo-borodinsky">
+                <a class="logo-link" href=""><img src="img/logo-borodinsky.png" width="209" height="90" alt="Логотип Borodinski"></a>
+              </li>
+
+              <li class="partners-logo logo-pink">
+               <a class="logo-link" href=""><img src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink"></a>
+              </li>
+
+              <li class="partners-logo logo-mishka">
+               <a class="logo-link" href=""><img width="173" height="84" src="img/logo-mishka.png" alt="Логотип Mishka"></a>
+              </li>
+            </ul>
+          </section>
         </div>
 
-        <div class="slider slider-hight">
-          <p>Только ночь,
-            только хардкор</p>
-          <p>Работать днем, как все? Мы против этого.
-            Ближе к полуночи работа только начинается.</p>
-          <a class="button" href="">Узнать больше</a>
+        <div class="map-wrap">
+          <section class="contacts">
+            <div class="contacts-info">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p class="info-title">Nёrds design studio</p>
+              <p class="info-address">191186, Санкт-Петербург,<br>
+                  ул. Б. Конюшенная, д. 19/8
+              </p>
+              <p>тел. <a class="phone" href="tel:+78122757575">+7 (812) 275–75–75</a></p>
+              <a class="button contacts-button" href="">Напишите нам</a>
+            </div>
+          </section>
         </div>
-
-        <div class="slider-controls">
-          <button class="slider-buttom current" type="button" aria-label="Первый слайд"></button>
-          <button class="slider-buttom" type="button" aria-label="Первый слайд"></button>
-          <button class="slider-buttom" type="button" aria-label="Первый слайд"></button>
-        </div>
-      </section>
-
-      <section class="services">
-        <h2 class="visually-hidden">Наши услуги</h2>
-
-        <ul class="service-list">
-          <li class="service-item">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-            <a class="button" href="">Заказать</a>
-          </li>
-
-          <li class="service-item">
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button" href="">Заказать</a>
-          </li>
-
-          <li class="service-item">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button" href="">Заказать</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="about">
-        <h2 class="visually-hidden">О нас</h2>
-
-        <p class="about-title">Мы — маленькая, но гордая <br>
-           дизайн-студия из Краснодара
-        </p>
-
-        <p class="about-text">
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-          превыше креатива. Работаем, не покладая рук, как роботы.
-        </p>
-
-        <p class="about-list">Выполняем заказы на разработку:</p>
-        <ul>
-          <li class="about-item">Веб-сайтов любой сложности</li>
-          <li class="about-item">Мобильных приложений для IOS и Android</li>
-          <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-
-        <p class="title-quolity">С 2004 года любим тосность во всем:</p>
-
-        <table class="table-quolity">
-          <tr>
-            <td class="quolity-item">146<sup><span class="percent">%</span></sup></td>
-            <td class="quolity-item">100<sup><span class="percent">%</span></sup></td>
-            <td class="quolity-item">50<sup><span class="percent">%</span></sup></td>
-          </tr>
-
-          <tr>
-            <td class="quolity-item">Уровень самоотдачи</td>
-            <td class="quolity-item">Соблюдение сроков</td>
-            <td class="quolity-item">Минимальная предоплата</td>
-          </tr>
-        </table>
-      </section>
-
-      <section class="partners">
-      <h2 class="visually-hidden">Наши партнёры</h2>
-        <ul class="partners-list">
-          <li class="partners-logo">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/Logo-htmlacademy.svg" width="199" height="68" alt="Логотип HTML academy"></a>
-          </li>
-
-          <li class="partners-logo">
-            <a href=""><img src="img/logo-borodinsky.png" width="209" height="90" alt="Логотип Borodinski"></a>
-          </li>
-
-          <li class="partners-logo">
-            <a href=""><img src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink"></a>
-          </li>
-
-          <li class="partners-logo">
-            <a href=""><img width="173" height="84" src="img/logo-mishka.png" alt="Логотип Mishka"></a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="contacts">
-        <div class="contacts-info">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="info-title">Nёrds design studio</p>
-          <p class="info-address">191186, Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. <a class="phone" href="tel:+78122757575">+7 (812) 275–75–75</a></p>
-          <a class="button" href="">Напишите нам</a>
-       </div>
-
-       <img class="contacts-info-img" src="img/map.jpg" width="1440" height="416" alt="Адрес компании Нёрдс">
-     </section>
     </main>
-    <footer>
-      <section class="social-networks">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <footer class="footer-wrap">
+      <div class="wrap-container">
+        <section class="social-networks">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
        
-        <ul class="social-list">
-          <li class="social-item social-vk"><a href=""></a></li>
-          <li class="social-item social-fb"><a href=""></a></li>
-          <li class="social-item social-inst"><a href=""></a></li>
-        </ul>
+          <ul class="social-list">
+            <li class="social-item social-vk"><a href=""></a></li>
+            <li class="social-item social-fb"><a href=""></a></li>
+            <li class="social-item social-inst"><a href=""></a></li>
+          </ul>
 
-         <p class="contacts-title">Давайте дружить, это <strong>выгодно!</strong></p>
-         <p class="contacts-text">Скидка 10% для друзей из социальных сетей</p>
-      </section>
+          <div class="contacts-invitation">
+            <p class="contacts-title">Давайте дружить, это <strong>выгодно!</strong></p>
+            <p class="contacts-text">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+          </section>
+      </div>
     </footer>
 
     <section class="feedback">
