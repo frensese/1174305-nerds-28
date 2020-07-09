@@ -7,47 +7,40 @@
     <title>HTML Academy: Нёрдс, Каталог</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
-  <body class="catalog-page container">
+  <body class="catalog-page">
     <header class="catalog-header">
-      <div class="wrap-container">
-        <nav class="main-nav">
-          <a class="logo" href="index.html">
-            <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
-          </a>
+      <nav class="main-nav wrap-container">
+        <a class="logo" href="index.html">
+          <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
+        </a>
 
-          <ul class="site-navigation">
-            <li class="navigation-item">
-              <a href="">Студия</a>
-            </li>
-            <li class="navigation-item">
-              <a href="">Клиенты</a>
-            </li>
-            <li class="navigation-item active">
-              <a href="">Магазин</a>
-            </li>
-            <li class="navigation-item">
-              <a href="">Контакты</a>
-            </li>
-          </ul>
-          <ul class="user-nav">
-            <li class="navigation-item">
-              <a href="">
-                <span class="basket">Корзина</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="site-navigation">
+          <li class="navigation-item">
+            <a href="">Студия</a>
+          </li>
+          <li class="navigation-item">
+            <a href="">Клиенты</a>
+          </li>
+          <li class="navigation-item active">
+            <a href="">Магазин</a>
+          </li>
+          <li class="navigation-item">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-nav">
+          <li class="navigation-item">
+            <a class="basket-icon" href="">Корзина</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="catalog-content">
-      <div class="main-wrap">
-        <div class="wrap-container">
-          <h1>Магазин готовых шаблонов</h1>
-        </div>
+      <div class="catalog-wrap">
+          <h1 class="title-h1">Магазин готовых шаблонов</h1>
       </div>
       <div class="catalog-container">
         <section class="filter">
@@ -65,9 +58,9 @@
               </div>
               <div class="price-controls">
                 <label class="filter-label">От
-                  <input type="number" name="min-price" step="100" placeholder="0"></label>
+                  <input class="input-range" type="number" name="min-price" step="100" placeholder="0"></label>
                   <label class="filter-label">до
-                  <input type="number" name="max-price" step="100" placeholder="15000"></label>
+                  <input class="input-range" type="number" name="max-price" step="100" placeholder="15000"></label>
                 </div>
               </div>
             </fieldset>
@@ -121,6 +114,7 @@
         </section>
 
         <section class="catalog">
+          <h2 class="visually-hidden">Каталог шаблонов сайтов</h2>
           <div class="sorting">
             <p class="sorting-title">Сортировать:</p>
             <ul class="sorting-list">
@@ -139,72 +133,66 @@
             </ul>
           </div>
 
-          <h2 class="visually-hidden">Каталог шаблонов сайтов</h2>
           <ul class="catalog-list">
-            <li>
+            <li class="catalog-li">
               <article class="catalog-item">
                 <div class="item-info">
-                  <h3 class="item-title"><a href="">Sedona</a></h3>
+                  <h3 class="title-h3 item-title"><a href="">Sedona</a></h3>
                   <p class="item-text">Информационный сайт для туристов</p>
                   <a class="button item-prise" href="">9 900 ₽</a>
                 </div>
-                <div class="circle"></div>
-                <img class="item-img" src="img/sedona.jpg" width="358" height="578" alt="Превью сайта Sedona">
+                <img class="item-img" src="img/sedona.jpg" width="360" height="578" alt="Превью сайта Sedona">
               </article>  
             </li>
-            <li>
+            <li class="catalog-li">
               <article class="catalog-item">
                 <div class="item-info">
-                  <h3 class="item-title"><a href="">Pink App</a></h3>
+                  <h3 class="title-h3 item-title"><a href="">Pink App</a></h3>
                   <p class="item-text">Продуктовый лендинг  приложения для iOS и Android</p>
                   <a class="button item-prise" href="">9 900 ₽</a>
                 </div>
-                <div class="circle"></div>
-                <img class="item-img" src="img/pink.jpg" width="358" height="578" alt="Превью лендинга прриложения Pink App">
+                <img class="item-img" src="img/pink.jpg" width="360" height="578" alt="Превью лендинга прриложения Pink App">
               </article>  
             </li>
-            <li>
+            <li class="catalog-li">
               <article class="catalog-item">
                 <div class="item-info">
-                  <h3 class="item-title"><a href="">Barbershop</a></h3>
+                  <h3 class="title-h3 item-title"><a href="">Barbershop</a></h3>
                   <p class="item-text">Сайт салона красоты. Для мужчин, да.</p>
                   <a class="button item-prise" href="">9 900 ₽</a>
                 </div>
-                <div class="circle"></div>
-                <img class="item-img" src="img/borodinsky.jpg" width="358" height="578" alt="Превью сайта Barbershop">
+                <img class="item-img" src="img/borodinsky.jpg" width="360" height="578" alt="Превью сайта Barbershop">
               </article>
             </li>
-            <li>
+            <li class="catalog-li">
               <article class="catalog-item">
                 <div class="item-info">
-                  <h3 class="item-title"><a href="">Mishka</a></h3>
+                  <h3 class="title-h3 item-title"><a href="">Mishka</a></h3>
                   <p class="item-text">Интернет-магазин  вязаных игрушек</p>
                   <a class="button item-prise" href="">9 900 ₽</a>
                 </div>
-                <div class="circle"></div>
-                <img class="item-img" src="img/mishka.jpg" width="358" height="578" alt="Превью интернет-магазина Mishka">
+                <img class="item-img" src="img/mishka.jpg" width="360" height="578" alt="Превью интернет-магазина Mishka">
               </article>
             </li>
-            <li>
+            <li class="catalog-li">
               <article class="catalog-item">
                 <div class="item-info">
-                  <h3 class="item-title"><a href="">A Plus</a></h3>
+                  <h3 class="title-h3 item-title"><a href="">A Plus</a></h3>
                   <p class="item-text">Лендинг курсов повышения квалификации</p>
                   <a class="button item-prise" href="">9 900 ₽</a>
                 </div>
-                <div class="circle"></div>
-                <img class="item-img" src="img/a-pluss.jpg" width="358" height="578" alt="Превью лендинга A Plus">
+                <img class="item-img" src="img/a-pluss.jpg" width="360" height="578" alt="Превью лендинга A Plus">
               </article>  
             </li>
-            <li>
+            <li class="catalog-li">
               <article class="catalog-item">
                 <div class="item-info">
-                  <h3 class="item-title"><a href="">Кваст</a></h3>
+                  <h3 class="title-h3 item-title"><a href="">Кваст</a></h3>
                   <p class="item-text">Промо-сайт производителя  крафтового кваса</p>
                   <a class="button item-prise" href="">9 900 ₽</a>
                 </div>
-                <div class="circle"></div>
-                <img class="item-img" src="img/kvast.jpg" width="358" height="578" alt="Превью промо-сайта «Кваст»">
+
+                <img class="item-img" src="img/kvast.jpg" width="360" height="578" alt="Превью промо-сайта «Кваст»">
               </article>
             </li>
           </ul>
@@ -218,29 +206,28 @@
         </section>
       </div>
     
-      <div class="map-wrap">
-        <section class="contacts">
-          <div class="contacts-info">
-            <h2 class="visually-hidden">Контакты</h2>
-            <p class="info-title">Nёrds design studio</p>
-            <p class="info-address">191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p>тел. <a class="phone" href="tel:+78122757575">+7 (812) 275–75–75</a></p>
-            <a class="button contacts-button" href="">Напишите нам</a>
-          </div>
-        </section>
-      </div>
+      <section class="contacts">
+        <div class="map"></div>
+        <img class="map-img visually-hidden" src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <div class="contacts-info">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="info-title">Nёrds design studio</p>
+          <p class="info-address">191186, Санкт-Петербург,<br>
+           ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>тел. <a class="phone" href="tel:+78122757575">+7 (812) 275–75–75</a></p>
+          <a class="button contacts-button" href="">Напишите нам</a>
+        </div>
+      </section>
     </main>
-    <footer class="footer-catalog">
-      <div class="wrap-container">
+    <footer class="footer-catalog wrap-container">
         <section class="social-networks">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
-       
+      
           <ul class="social-list">
-            <li class="social-item social-vk"><a href=""></a></li>
-            <li class="social-item social-fb"><a href=""></a></li>
-            <li class="social-item social-inst"><a href=""></a></li>
+            <li class="social-item social-vk"><a aria-label="vkotakte" href=""></a></li>
+            <li class="social-item social-fb"><a aria-label="facebook" href=""></a></li>
+            <li class="social-item social-inst"><a aria-label="instagram" href=""></a></li>
           </ul>
 
           <div class="contacts-invitation">
@@ -248,26 +235,26 @@
             <p class="contacts-text">Скидка 10% для друзей из социальных сетей</p>
         </div>
           </section>
-      </div>
     </footer>
-  
-    <section class="feedback">
-      <h2 class="feedback-title">Напишите нам</h2>
+
+    <section class="modal modal-feedback">
+      <h2 class="title-h2 feedback-title">Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>Ваше имя
-          <input class="feedback-item" type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-  
-        <label>Эл. почта
-          <input class="feedback-item" type="email" name="email" placeholder="email@example.com" required>
+        <label class="feedback-input">Ваше имя
+          <input class="feedback-item" type="text" name="first-name" placeholder="Имя Фамилия">
         </label>
 
-        <label>Текст письма:
-          <textarea name="message" placeholder="В свободной форме" rows="10"></textarea>
+        <label class="feedback-input">Ваша почта
+          <input class="feedback-item" type="email" name="email" placeholder="email@example.com">
         </label>
-        <button class="feedback-button" type="submit">Отправить</button>
+
+        <label class="feedback-text">Текст письма:
+          <textarea class="feedback-textarea" name="message" placeholder="В свободной форме" rows="6"></textarea>
+        </label>
+        <button class="button feedback-button" type="submit">Отправить</button>
       </form>
-      <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="button-close" type="button" aria-label="Закрыть"></button>
     </section>
+    <script src="js/interactive-min.js"></script>
   </body>
 </html>
