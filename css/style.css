@@ -375,7 +375,7 @@ a.item-prise {
     align-self: flex-end;
 }
 
-.button-more {
+a.button-more {
     padding-right: 54px;
     padding-left: 54px;
     margin-top: 27px;
@@ -675,19 +675,19 @@ a.item-prise {
 }
 
 .map-img {
+    border: none;
+    min-width: 1440px;
     width: 1440px;
     height: 416px;
-    border: none;
-
-    margin: 0;
-    margin-left: -720px;
-    margin-top: -208px;
-    padding: 0;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: -1;
+    transform: translate(-50%, -50%);
+
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .contacts-info {
@@ -696,8 +696,8 @@ a.item-prise {
     width: 319px;
     min-height: 308px;
 
-    left: 20px;
-    top: -362px;
+    left: calc((100% - 1160px)/2);
+    top: 54px;
 
     display: flex;
     flex-direction: column;
@@ -862,10 +862,8 @@ a.item-prise {
 .contacts {
     background-color: var(--bg-gray);
     position: relative;
-}
-
-.contacts-wrap {
-    position: relative;
+    margin-top: 80px;
+    min-height: 416px;
 }
 
 .social-networks p:last-of-type {
@@ -1561,8 +1559,6 @@ a.arrow-2::before {
     width: 100%;
     background-color: grey;
     border: none;
-
-    margin-top: 80px;
 }
 
 @keyframes slider {
