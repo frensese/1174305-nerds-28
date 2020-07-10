@@ -675,13 +675,18 @@ a.item-prise {
 }
 
 .map-img {
+    width: 1440px;
+    height: 416px;
+    border: none;
+
     margin: 0;
+    margin-left: -720px;
+    margin-top: -208px;
     padding: 0;
-    margin-top: 62px;
 
     position: absolute;
-    top: -48px;
-    border: none;
+    top: 50%;
+    left: 50%;
     z-index: -1;
 }
 
