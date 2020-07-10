@@ -1,10 +1,10 @@
-var buttonSliderFirst = document.querySelector(".slider-buttom-1");
+var buttonSliderFirst = document.querySelector(".slider-button-1");
 var Slider = document.querySelector(".slider-expensive");
 
-var buttonSliderSecond = document.querySelector(".slider-buttom-2");
+var buttonSliderSecond = document.querySelector(".slider-button-2");
 var SliderSecond = document.querySelector(".slider-math");
 
-var buttonSliderThrid = document.querySelector(".slider-buttom-3");
+var buttonSliderThrid = document.querySelector(".slider-button-3");
 var SliderThird = document.querySelector(".slider-hight");
 
 
